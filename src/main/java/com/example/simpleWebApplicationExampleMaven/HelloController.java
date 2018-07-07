@@ -1,7 +1,11 @@
 package com.example.simpleWebApplicationExampleMaven;
 
-@Controller
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
 public class HelloController {
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 
@@ -11,4 +15,12 @@ public class HelloController {
     }
 
 >>>>>>> 956292e... third message
+=======
+
+    @RequestMapping("/")
+    public String index() {
+        return "Greetings from Spring Boot!";
+    }
+
+>>>>>>> 9b7b52f... html template
 }
